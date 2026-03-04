@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suyog Chavan | Business Analyst Portfolio</title>
+<title>Suyog Chavan | Business Analyst</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,81 +13,131 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:Inter,sans-serif;
 }
 
 body{
-background:#0f172a;
+background:#0b1120;
 color:white;
 line-height:1.6;
 }
 
 .container{
-width:90%;
 max-width:1100px;
 margin:auto;
+padding:20px;
 }
 
-header{
-background:linear-gradient(135deg,#4f46e5,#9333ea);
-padding:80px 0;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+position:sticky;
+top:0;
+background:#0b1120;
+z-index:10;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
+}
+
+.hero{
 text-align:center;
+padding:120px 20px;
 }
 
-header h1{
-font-size:42px;
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
 }
 
-header p{
-margin-top:10px;
-font-size:18px;
-opacity:.9;
+.hero h2{
+font-size:22px;
+color:#a5b4fc;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+opacity:.85;
+}
+
+.buttons{
+margin-top:30px;
 }
 
 .btn{
 display:inline-block;
-margin:15px;
 padding:12px 25px;
-background:white;
-color:#4f46e5;
-border-radius:25px;
-font-weight:600;
+border-radius:8px;
+margin:10px;
+background:#6366f1;
+color:white;
 text-decoration:none;
 }
 
-section{
-padding:70px 0;
+.btn.secondary{
+background:#1e293b;
 }
 
-h2{
+.badge{
+display:inline-block;
+padding:6px 12px;
+border-radius:20px;
+background:#1e293b;
+margin:6px;
+font-size:12px;
+}
+
+.section{
+padding:80px 20px;
+}
+
+.section h2{
 text-align:center;
+font-size:34px;
 margin-bottom:40px;
-font-size:32px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
 
 .card{
 background:#1e293b;
 padding:25px;
-border-radius:10px;
+border-radius:12px;
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
-background:#334155;
+transform:translateY(-5px);
 }
 
-.metrics{
+.tags{
+margin-top:10px;
+}
+
+.tag{
+display:inline-block;
+background:#334155;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+margin:4px;
+}
+
+.metric-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-text-align:center;
 gap:20px;
+text-align:center;
 }
 
 .metric{
@@ -97,20 +147,20 @@ border-radius:10px;
 }
 
 .metric h3{
-font-size:32px;
+font-size:34px;
 color:#818cf8;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
-text-align:center;
+margin-top:60px;
 padding:30px;
+text-align:center;
 background:#020617;
-margin-top:50px;
-}
-
-a{
-color:#818cf8;
-text-decoration:none;
+font-size:14px;
 }
 
 </style>
@@ -118,61 +168,118 @@ text-decoration:none;
 
 <body>
 
-<header>
-<div class="container">
+<nav class="container">
+<div class="logo">SC</div>
+<div>Portfolio</div>
+</nav>
 
-<h1>Suyog Chavan</h1>
+<section class="hero">
 
-<p>Business Analyst | Data Analytics | Business Intelligence</p>
+<div class="badge">Available for Opportunities</div>
 
-<p>Turning Data into Strategic Business Insights</p>
+<h1>Hi, I'm Suyog Chavan</h1>
 
-<a class="btn" href="#projects">View Projects</a>
-<a class="btn" href="#contact">Contact Me</a>
+<h2>Business Analyst | Data Analytics | Business Intelligence</h2>
+
+<p>
+Transforming data into strategic business insights through analytics, visualization, and machine learning.
+</p>
+
+<div class="buttons">
+
+<a class="btn">View Projects</a>
+
+<a class="btn secondary">Download Resume</a>
+
+<a class="btn secondary">Contact Me</a>
 
 </div>
-</header>
 
-<section id="about">
+<div style="margin-top:20px">
+
+<span class="badge">Pune, India</span>
+<span class="badge">LinkedIn</span>
+<span class="badge">Email</span>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>About</h2>
 
 <div class="container">
 
-<h2>About Me</h2>
+<p style="text-align:center;max-width:700px;margin:auto">
 
-<p style="text-align:center; max-width:700px; margin:auto;">
-MBA Business Analytics student at COEP Technological University with a strong technical background in Computer Science and Advanced Computing (CDAC).
-I specialize in transforming complex datasets into actionable business insights using SQL, Python, and Power BI dashboards.
+MBA Business Analytics student at COEP Technological University with a strong technical foundation in computer science and data analytics. Passionate about translating complex business problems into actionable insights using Power BI, SQL, and machine learning techniques.
+
 </p>
 
 </div>
+
 </section>
 
-<section id="skills">
+<section class="section">
 
-<div class="container">
+<h2>Skills & Expertise</h2>
 
-<h2>Skills</h2>
-
-<div class="cards">
+<div class="container cards">
 
 <div class="card">
+
 <h3>Data Analytics</h3>
-<p>Python<br>SQL<br>Machine Learning<br>Data Cleaning</p>
+
+<div class="tags">
+
+<span class="tag">Python</span>
+<span class="tag">SQL</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Data Cleaning</span>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <h3>Business Intelligence</h3>
-<p>Power BI<br>Tableau<br>DAX<br>Dashboard Development</p>
+
+<div class="tags">
+
+<span class="tag">Power BI</span>
+<span class="tag">Tableau</span>
+<span class="tag">DAX</span>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <h3>Technology</h3>
-<p>React<br>Java<br>Git<br>Google Workspace</p>
+
+<div class="tags">
+
+<span class="tag">React</span>
+<span class="tag">Java</span>
+<span class="tag">Git</span>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <h3>Business Skills</h3>
-<p>Market Research<br>Strategic Thinking<br>Process Optimization<br>Stakeholder Analysis</p>
+
+<div class="tags">
+
+<span class="tag">Strategic Thinking</span>
+<span class="tag">Market Research</span>
+<span class="tag">Stakeholder Collaboration</span>
+
 </div>
 
 </div>
@@ -181,17 +288,15 @@ I specialize in transforming complex datasets into actionable business insights 
 
 </section>
 
-<section>
-
-<div class="container">
+<section class="section">
 
 <h2>Impact Metrics</h2>
 
-<div class="metrics">
+<div class="container metric-grid">
 
 <div class="metric">
 <h3>11</h3>
-<p>Power BI Dashboards Built</p>
+<p>Power BI Dashboards</p>
 </div>
 
 <div class="metric">
@@ -211,115 +316,154 @@ I specialize in transforming complex datasets into actionable business insights 
 
 </div>
 
-</div>
-
 </section>
 
-<section id="projects">
-
-<div class="container">
-
-<h2>Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>BBPS Analytics Dashboard</h3>
-<p>Power BI dashboard analyzing transaction trends, commission structures, and merchant insights.</p>
-</div>
-
-<div class="card">
-<h3>Sentiment Analysis</h3>
-<p>Machine learning model analyzing customer reviews using NLP to extract business insights.</p>
-</div>
-
-<div class="card">
-<h3>Online Pharmacy System</h3>
-<p>Developed a web-based platform to streamline pharmacy operations and improve user experience.</p>
-</div>
-
-<div class="card">
-<h3>AI in CRM</h3>
-<p>Case study analyzing integration of AI into CRM systems to enhance predictive analytics and customer engagement.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
+<section class="section">
 
 <h2>Experience</h2>
 
-<div class="cards">
+<div class="container cards">
 
 <div class="card">
 
-<h3>Business Analyst Intern</h3>
+<h3>Cyber3ra & Threatactix</h3>
 
-<p><b>Edsom Fintech</b></p>
+<p><b>Software Intern</b></p>
 
-<p>Developed 11 Power BI dashboards for BBPS analytics with advanced DAX and row-level security. Generated insights from 11,000+ records.</p>
+<ul>
 
-</div>
+<li>Restored website functionality</li>
+<li>Validated 290+ Azure resources for migration</li>
+<li>Collaborated with development teams</li>
 
-<div class="card">
-
-<h3>Software Intern</h3>
-
-<p><b>Cyber3ra & Threatactix</b></p>
-
-<p>Restored website functionality and validated 290+ Azure resources for migration.</p>
+</ul>
 
 </div>
 
 <div class="card">
 
-<h3>Web Development Intern</h3>
+<h3>ECS Software Technologies</h3>
 
-<p><b>ECS Software Technologies</b></p>
+<p><b>Web Development Intern</b></p>
 
-<p>Developed HTML, CSS, and JavaScript features for web applications.</p>
+<p>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<div class="container">
-
-<h2>Contact</h2>
-
-<p style="text-align:center">
-
-Email: <a href="mailto:chavanss24.mba@coeptech.ac.in">chavanss24.mba@coeptech.ac.in</a>
-
-<br><br>
-
-Location: Pune, India
-
-<br><br>
-
-LinkedIn: Add your profile link
+Developed custom HTML, CSS, and JavaScript web applications.
 
 </p>
 
 </div>
 
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Projects</h2>
+
+<div class="container cards">
+
+<div class="card">
+
+<h3>AI in CRM Case Study</h3>
+
+<p>
+
+Analysis on integrating AI into CRM platforms for predictive analytics and customer engagement.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">Data Analysis</span>
+<span class="tag">AI/ML</span>
+<span class="tag">CRM</span>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Sentiment Analysis</h3>
+
+<p>
+
+Machine learning model analyzing customer reviews for sentiment insights.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">Python</span>
+<span class="tag">NLP</span>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Online Pharmacy System</h3>
+
+<p>
+
+Web platform to streamline pharmacy operations and improve user experience.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">Web Dev</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Certifications</h2>
+
+<div class="container cards">
+
+<div class="card">
+
+<h3>IIM Mumbai</h3>
+
+<p>Generative AI for Data-Driven Business Decision-Making</p>
+
+</div>
+
+<div class="card">
+
+<h3>Accenture</h3>
+
+<p>Data Analytics & Visualization Job Simulation</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact">
+
+<h2>Get In Touch</h2>
+
+<p>Email: chavanss24.mba@coeptech.ac.in</p>
+
+<p>Location: Pune, India</p>
+
 </section>
 
 <footer>
 
-<p>© 2026 Suyog Chavan | Business Analyst Portfolio</p>
+© 2026 Suyog Chavan | Business Analytics Portfolio
 
 </footer>
 
